@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    width: 40%;
+}
+
+header img {
+    width: 140px;
+}
+
+header nav li {
+    list-style: none;
+}
+
+header nav a {
+    text-decoration: none;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    
+}
