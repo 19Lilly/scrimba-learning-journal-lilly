@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>index.htmlt</title>
-</head>
-<body>
-    <header>
-        <img src="images/logo.png" alt="logo of site">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My learning journal - scrimba solo project by Lilly</title>
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--CSS-->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <span class="logo">
+          <img class="logo-icon" src="images/logo-icon.png" alt="logo icon" />
+          My learning journal
+        </span>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About me</a></li>
-            </ul>
+          <ul>
+            <li class="upper"><a href="#">Home</a></li>
+            <li class="upper"><a href="#">About me</a></li>
+          </ul>
         </nav>
-    </header>
-    <main id="hero">
-        <img src="images/article-image-hero.png" alt="main hero images">
-        <h1>My new yourney as a bootcamp student</h1>
-        <h3>July 23, 2022</h3>
-    </main>
-    
-</body>
+      </header>
+      <section id="hero">
+        <div class="text-container">
+          <span class="date upper">July 23, 2022</span>
+          <h1 class="hero-title">My new yourney as a bootcamp student</h1>
+          <p class="hero-text">
+            After several months of learning in the Frontend Developer Career
+            Path, I've made the big jump over to the Bootcamp to get expert code
+            reviews of my Solo Projects projects and meet like-minded peers.
+          </p>
+        </div>
+      </section>
+      <section class="blog-container"></section>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
