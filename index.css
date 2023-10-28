@@ -55,6 +55,9 @@ header {
   background-color: #fff;
   margin: 0;
   padding: 0 3em;
+  position: fixed;
+  top: 0;
+  margin-left:auto;
 }
 
 .logo {
