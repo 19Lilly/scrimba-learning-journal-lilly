@@ -1,3 +1,5 @@
+"use strict";
+
 export const heroArr = [
   {
     img: "images/article-hero-img.png",

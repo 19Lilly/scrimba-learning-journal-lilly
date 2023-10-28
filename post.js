@@ -1,3 +1,4 @@
+"use strict"
 import { dataArr } from "./data.js";
 import { heroArr } from "./data.js";
 
