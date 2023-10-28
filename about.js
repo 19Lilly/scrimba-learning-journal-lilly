@@ -17,9 +17,10 @@ function showTopOfThePage() {
       text4,
       aboutMeTitle,
       userImg,
+      userImgAlt
     }) => {
       topEl.innerHTML += `<div class="post-page-container">
-                <img class="user-img" src="${userImg}"/>
+                <img class="user-img" src="${userImg}" alt="${userImgAlt}"/>
                 <h1 class="about-title">${aboutMeTitle}</h1>
                 <p class="post-page-text first-text">${text}</p>
                 <div class="text-content">
@@ -36,14 +37,14 @@ function showTopOfThePage() {
 }
 
 function showRecentPost() {
-  dataArr.forEach(({ id, img, date, title, text }) => {
+  dataArr.forEach(({ id, img, alt, date, title, text }) => {
     if (id < 4) {
       blogContainer.innerHTML += `
             <div class="blog-article" id="blog-article-${id}">
             <img
             class="blog-img"
             src="${img}"
-            alt="notebook with opened code editor"
+            alt="${alt}"
             />
             <span class="date upper">${date}</span>
             <h3 class="blog-title">${title}</h3>

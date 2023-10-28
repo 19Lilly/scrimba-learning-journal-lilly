@@ -25,12 +25,12 @@ showHero();
 //render home page articles
 function showArticle() {
   blogContainer.innerHTML = "";
-  dataArr.forEach(({ id, img, date, title, text }) => {
+  dataArr.forEach(({ id, img, alt, date, title, text }) => {
     blogContainer.innerHTML += `<div class="blog-article" id="blog-article-${id}">
         <img
         class="blog-img"
         src="${img}"
-        alt="notebook with opened code editor"
+        alt="${alt}"
         />
         <span class="date upper">${date}</span>
         <h3 class="blog-title">${title}</h3>
