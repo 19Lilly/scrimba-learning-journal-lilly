@@ -104,8 +104,8 @@ header nav a {
   background-image: url("images/article-hero-img.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 25% 70%;
-  height: 20rem;
+  background-position: 25% 100%;
+  height: 21rem;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -271,7 +271,6 @@ footer {
   #hero {
     height: 30.5rem;
     background-position: 25% 70%;
-    background-size: cover;
   }
 
   .hero-title {
