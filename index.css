@@ -43,8 +43,14 @@ body {
   background-color: #1e1e1e;
 }
 
-.container {
+.wrapper {
   width: min(26rem, 98%);
+  height: fit-content;
+  box-shadow: 3px 3px 50px #9603f1;
+}
+
+.container {
+  width: 100%;
   background-color: #fafafa;
 }
 
@@ -163,7 +169,7 @@ header nav a {
 /*-----Blog article-----*/
 
 .blog-container {
-  margin-top: 1.5em;
+  padding-top: 1.5em;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1em;
@@ -252,7 +258,7 @@ footer {
 /*-----Media queries-----*/
 
 @media (min-width: 65em) {
-  .container {
+  .wrapper {
     width: min(68rem, 98%);
   }
 
