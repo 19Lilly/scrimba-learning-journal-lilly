@@ -58,10 +58,10 @@ body {
 /*------Header-----*/
 
 header {
-  width: 100%;
+  width: min(26rem, 98%);
   background-color: #fff;
   margin: 0;
-  padding: 0 3em;
+  padding: 0 1.5em;
   position: fixed;
   top: 0;
   margin-left: auto;
@@ -104,8 +104,7 @@ header nav a {
   background-image: url("images/article-hero-img.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom center;
-  width: min(26rem, 100%);
+  background-position: 25% 70%;
   height: 20rem;
   display: flex;
   flex-direction: column;
@@ -114,7 +113,7 @@ header nav a {
 }
 
 .text-container {
-  padding: 0 1.25rem 1.5rem;
+  padding: 0 1.25rem 0.5rem;
   font: inherit;
   color: #fff;
 }
@@ -126,12 +125,14 @@ header nav a {
 }
 
 .hero-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  margin: 0;
 }
 
 .hero-text {
   margin-block: 0.5em;
   font-size: 1rem;
+  line-height: normal;
 }
 
 .hero-title,
@@ -234,7 +235,6 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 2em 0;
-  width: 100%;
   margin-top: 1.5em;
 }
 
@@ -265,18 +265,27 @@ footer {
 
   header {
     width: min(68rem, 98%);
+    padding: 0 3em;
   }
 
   #hero {
-    width: min(68rem, 100%);
     height: 30.5rem;
     background-position: 25% 70%;
     background-size: cover;
   }
 
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .date {
+    font-size: 1rem;
+  }
+
   .text-container {
     width: 55%;
     margin-left: 2em;
+    margin-bottom: 2em;
   }
 
   .blog-container {
