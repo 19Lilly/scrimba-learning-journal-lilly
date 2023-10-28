@@ -4,6 +4,7 @@ export const heroArr = [
   {
     img: "images/article-hero-img.png",
     date: "July 23, 2022",
+    userImg:"images/user-img.png",
     title: "My new yourney as a bootcamp student",
     text: `After several months of learning in the Frontend Developer Career
           Path, I've made the big jump over to the Bootcamp to get expert code
@@ -18,6 +19,8 @@ export const heroArr = [
       "I started simple and gradually grew my learning journal site. I would take notes about what I was learning. After each learning session, I'd use my notes to not only reflect on what I learned but also write short summaries of what I learned using my own words.",
     text4:
       "That helped me grok what I was learning, and I realized that posting my learning summaries was also helping others learn and stay motivated.",
+    aboutMeTitle: "Hi there! My name is Roku and welcome to my learning journal.",
+
   },
 ];
 

@@ -8,34 +8,29 @@ const topEl = document.querySelector(".top");
 function showTopOfThePage() {
   heroArr.forEach(
     ({
-      date,
-      title,
       text,
-      img,
       title1,
       text1,
       text2,
       title2,
       text3,
       text4,
+      aboutMeTitle,
+      userImg,
     }) => {
-      topEl.innerHTML += `
-      <div class="post-page-container">
-            <div class="text-content">
-                <span class="date post-page-date upper">${date}</span>
-                <h1 class="post-page-title-main">${title}</h1>
-                <p class="post-page-text">${text}</p>
-            </div>
-            <img class="post-page-img" src="${img}" alt="computer on the table in the evening"/>
-            <div class="text-content">
-                <p class="post-page-title">${title1}</p>
-                <p class="post-page-text">${text1}</p>
-                <p class="post-page-text">${text2}</p>
-                <p class="post-page-title">${title2}</p>
-                <p class="post-page-text">${text3}</p>
-                <p class="post-page-text">${text4}</p>
-            </div> 
-        </div>`;
+      topEl.innerHTML += `<div class="post-page-container">
+                <img class="user-img" src="${userImg}"/>
+                <h1 class="about-title">${aboutMeTitle}</h1>
+                <p class="post-page-text first-text">${text}</p>
+                <div class="text-content">
+                    <p class="post-page-title">${title1}</p>
+                    <p class="post-page-text">${text1}</p>
+                    <p class="post-page-text">${text2}</p>
+                    <p class="post-page-title">${title2}</p>
+                    <p class="post-page-text">${text3}</p>
+                    <p class="post-page-text">${text4}</p>
+                </div>
+            </div>`;
     }
   );
 }

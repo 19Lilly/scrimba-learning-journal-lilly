@@ -38,13 +38,13 @@ li {
 body {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .container {
   width: min(26rem, 98%);
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
 }
 
 /*------Header-----*/
@@ -93,11 +93,12 @@ header nav a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
-  width: 100%;
+  width: 26rem;
   height: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: end;
+  text-decoration: none;
   margin-bottom: 1.5em;
 }
 
@@ -105,7 +106,6 @@ header nav a {
   padding: 0 1.25rem 1.5rem;
   font: inherit;
   color: #fff;
-  text-decoration: none;
 }
 
 .date {
@@ -114,13 +114,18 @@ header nav a {
   margin-block: 0.8em;
 }
 
+.hero-title {
+  font-size: 2.5rem;
+}
+
 .hero-text {
   margin-block: 0.5em;
   font-size: 1rem;
 }
 
 .hero-title,
-.post-page-title-main {
+.post-page-title-main,
+.about-title {
   font-size: 2rem;
   line-height: 108.2%; /* 2.164rem */
   letter-spacing: -0.06rem;
@@ -197,6 +202,17 @@ header nav a {
   font-weight: 700;
 }
 
+/*----about page-----*/
+.user-img {
+  width: 11.4rem;
+  aspect-ratio: 1;
+  margin-bottom: 1.7em;
+}
+
+.first-text {
+  margin-bottom: 3em;
+}
+
 /*-----footer------*/
 
 footer {
@@ -225,4 +241,38 @@ footer {
   font-size: 0.75rem;
   line-height: 125%; /* 0.9375rem */
   margin-bottom: 0;
+}
+
+/*-----Media queries-----*/
+
+@media (min-width: 65em) {
+  .container {
+    width: min(68rem, 98%);
+    padding-inline: 2em;
+  }
+
+  #hero {
+    width: 68rem;
+    height: 30.5rem;
+    background-position: 25% 70%;
+  }
+
+  .text-container {
+    width: 55%;
+    margin-left: 2em;
+  }
+
+  .blog-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .post-page-img {
+    height: 30.5rem;
+    object-position: 25% 75%;
+    margin: 0;
+  }
+
+  .text-content {
+    padding: 0 3em 1em;
+  }
 }

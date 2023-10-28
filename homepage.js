@@ -12,11 +12,11 @@ const viewLessBtn = document.querySelector(".view-less-btn");
 function showHero() {
   heroArr.forEach(({ date, title, text }) => {
     hero.innerHTML += `
-      <a href="post.html" class="text-container">
+      <div class="text-container container">
           <span class="date upper">${date}</span>
           <h1 class="hero-title">${title}</h1>
           <p class="hero-text">${text}</p>
-      </a>`;
+      </div>`;
   });
 }
 
@@ -26,9 +26,7 @@ showHero();
 function showArticle() {
   blogContainer.innerHTML = "";
   dataArr.forEach(({ id, img, date, title, text }) => {
-    blogContainer.insertAdjacentHTML(
-      "beforebegin",
-      `<div class="blog-article" id="blog-article-${id}">
+    blogContainer.innerHTML += `<div class="blog-article" id="blog-article-${id}">
         <img
         class="blog-img"
         src="${img}"
@@ -37,8 +35,7 @@ function showArticle() {
         <span class="date upper">${date}</span>
         <h3 class="blog-title">${title}</h3>
         <p class="blog-text">${text}</p>
-        </div>`
-    );
+        </div>`;
   });
   showThreeArticles();
 }
