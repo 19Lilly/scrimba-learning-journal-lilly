@@ -117,7 +117,6 @@ header nav a {
   gap: 1em;
 }
 
-
 .blog-img {
   margin-bottom: 0.5em;
   height: 14.5rem;
@@ -130,4 +129,39 @@ header nav a {
 
 .blog-text {
   margin-top: 0.5em;
+}
+
+.view-more-btn,
+.view-less-btn {
+  color: #000;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+footer {
+  background: #202020;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+.footer-text {
+  color: #ececec;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 108.2%; /* 0.8115rem */
+  letter-spacing: -0.0225rem;
+  margin:0;
+}
+
+.footer-copyright {
+  color: #d7d7d7;
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 125%; /* 0.9375rem */
+  margin-bottom: 0;
 }
