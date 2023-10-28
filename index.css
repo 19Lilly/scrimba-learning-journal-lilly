@@ -58,7 +58,7 @@ body {
 /*------Header-----*/
 
 header {
-  width: min(26rem, 98%);
+  width: 100%;
   background-color: #fff;
   margin: 0;
   padding: 0 3em;
