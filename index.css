@@ -254,7 +254,6 @@ footer {
 @media (min-width: 65em) {
   .container {
     width: min(68rem, 98%);
-    padding-inline: 2em;
   }
 
   header {
@@ -275,6 +274,7 @@ footer {
 
   .blog-container {
     grid-template-columns: 1fr 1fr 1fr;
+    padding-inline: 2em;
   }
 
   .post-page-img {
@@ -286,5 +286,10 @@ footer {
 
   .text-content {
     padding: 0 3em 1em;
+  }
+
+  .top {
+    margin-top: 2em;
+    padding-inline: 2em;
   }
 }
