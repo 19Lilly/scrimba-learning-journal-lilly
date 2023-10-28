@@ -57,7 +57,7 @@ header {
   padding: 0 3em;
   position: fixed;
   top: 0;
-  margin-left:auto;
+  margin-left: auto;
 }
 
 .logo {
@@ -94,7 +94,7 @@ header nav a {
 /*-----Hero section-----*/
 
 #hero {
-  background-image: url("images/article-hero-img.png");
+  background-image: url("images/article-hero-img.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;

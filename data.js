@@ -2,9 +2,9 @@
 
 export const heroArr = [
   {
-    img: "images/article-hero-img.png",
+    img: "images/article-hero-img.webp",
     date: "July 23, 2022",
-    userImg:"images/user-img.png",
+    userImg: "images/user-img.webp",
     title: "My new yourney as a bootcamp student",
     text: `After several months of learning in the Frontend Developer Career
           Path, I've made the big jump over to the Bootcamp to get expert code
@@ -19,15 +19,15 @@ export const heroArr = [
       "I started simple and gradually grew my learning journal site. I would take notes about what I was learning. After each learning session, I'd use my notes to not only reflect on what I learned but also write short summaries of what I learned using my own words.",
     text4:
       "That helped me grok what I was learning, and I realized that posting my learning summaries was also helping others learn and stay motivated.",
-    aboutMeTitle: "Hi there! My name is Roku and welcome to my learning journal.",
-
+    aboutMeTitle:
+      "Hi there! My name is Roku and welcome to my learning journal.",
   },
 ];
 
 export const dataArr = [
   {
     id: 1,
-    img: "images/blog-img-01.png",
+    img: "images/blog-img-01.webp",
     date: "July 23, 2022",
     title: "Blog one",
     text: `I'm excited to start a new learning journey as a Scrimba Bootcamp
@@ -36,7 +36,7 @@ export const dataArr = [
   },
   {
     id: 2,
-    img: "images/blog-img-02.png",
+    img: "images/blog-img-02.webp",
     date: "July 23, 2022",
     title: "Blog two",
     text: `I'm excited to start a new learning journey as a Scrimba Bootcamp
@@ -45,7 +45,7 @@ export const dataArr = [
   },
   {
     id: 3,
-    img: "images/blog-img-03.png",
+    img: "images/blog-img-03.webp",
     date: "July 23, 2022",
     title: "Blog three",
     text: `I'm excited to start a new learning journey as a Scrimba Bootcamp
@@ -54,7 +54,7 @@ export const dataArr = [
   },
   {
     id: 4,
-    img: "images/blog-img-04.png",
+    img: "images/blog-img-04.webp",
     date: "July 23, 2022",
     title: "Blog four",
     text: `I'm excited to start a new learning journey as a Scrimba Bootcamp
@@ -63,7 +63,7 @@ export const dataArr = [
   },
   {
     id: 5,
-    img: "images/blog-img-05.png",
+    img: "images/blog-img-05.webp",
     date: "July 23, 2022",
     title: "Blog five",
     text: `I'm excited to start a new learning journey as a Scrimba Bootcamp
@@ -72,7 +72,7 @@ export const dataArr = [
   },
   {
     id: 6,
-    img: "images/blog-img-06.png",
+    img: "images/blog-img-06.webp",
     date: "July 23, 2022",
     title: "Blog six",
     text: `I'm excited to start a new learning journey as a Scrimba Bootcamp
