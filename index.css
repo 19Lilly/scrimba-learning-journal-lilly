@@ -47,6 +47,8 @@ body {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
 }
 
+/*------Header-----*/
+
 header {
   background-color: white;
   display: flex;
@@ -84,6 +86,8 @@ header nav a {
   text-decoration: none;
 }
 
+/*-----Hero section-----*/
+
 #hero {
   background-image: url("images/article-hero-img.png");
   background-repeat: no-repeat;
@@ -104,6 +108,17 @@ header nav a {
   text-decoration: none;
 }
 
+.date {
+  font-size: 0.75rem;
+  display: inline-block;
+  margin-block: 0.8em;
+}
+
+.hero-text {
+  margin-block: 0.5em;
+  font-size: 1rem;
+}
+
 .hero-title,
 .post-page-title-main {
   font-size: 2rem;
@@ -112,6 +127,11 @@ header nav a {
   margin: 0;
 }
 
+/*-----Post page-----*/
+.post-page-container {
+  color: #151515;
+  padding: 2em 1.25em 0;
+}
 
 .post-page-title {
   margin-top: 0.5em;
@@ -131,21 +151,7 @@ header nav a {
   width: 100%;
 }
 
-.post-page-container {
-  color: #151515;
-  padding: 2em 1.25em 0;
-}
-
-.date {
-  font-size: 0.75rem;
-  display: inline-block;
-  margin-block: 0.8em;
-}
-
-.hero-text {
-  margin-block: 0.5em;
-  font-size: 1rem;
-}
+/*-----Blog article-----*/
 
 .blog-container {
   display: grid;
@@ -190,6 +196,8 @@ header nav a {
   font-size: 1rem;
   font-weight: 700;
 }
+
+/*-----footer------*/
 
 footer {
   background: #202020;
