@@ -280,6 +280,7 @@ footer {
     height: 30.5rem;
     object-position: 25% 75%;
     margin: 0;
+    margin-bottom: 2em;
   }
 
   .text-content {
