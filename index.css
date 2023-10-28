@@ -16,6 +16,7 @@ img {
   display: block;
   max-width: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 ul,
@@ -27,6 +28,12 @@ li {
 .upper {
   text-transform: uppercase;
 }
+
+.hidden {
+  display: none;
+}
+
+/*----- All pages -----*/
 
 body {
   min-height: 100vh;
@@ -78,7 +85,6 @@ header nav a {
 }
 
 #hero {
-  color: #fff;
   background-image: url("images/article-hero-img.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -88,21 +94,52 @@ header nav a {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  margin-bottom: 1.5em;
 }
 
 .text-container {
   padding: 0 1.25rem 1.5rem;
+  font: inherit;
+  color: #fff;
+  text-decoration: none;
 }
 
-.hero-title {
+.hero-title,
+.post-page-title-main {
   font-size: 2rem;
   line-height: 108.2%; /* 2.164rem */
   letter-spacing: -0.06rem;
   margin: 0;
 }
 
+
+.post-page-title {
+  margin-top: 0.5em;
+  font-weight: 700;
+}
+
+.post-page-title,
+.post-page-text {
+  color: #151515;
+  font-size: 1rem;
+}
+
+.post-page-img {
+  object-position: bottom center;
+  margin-block: 2em;
+  height: 12rem;
+  width: 100%;
+}
+
+.post-page-container {
+  color: #151515;
+  padding: 2em 1.25em 0;
+}
+
 .date {
   font-size: 0.75rem;
+  display: inline-block;
+  margin-block: 0.8em;
 }
 
 .hero-text {
@@ -111,10 +148,13 @@ header nav a {
 }
 
 .blog-container {
-  padding: 1.25em;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1em;
+}
+
+.blog-article {
+  padding: 0.5em 1.25em 0;
 }
 
 .blog-img {
@@ -129,6 +169,18 @@ header nav a {
 
 .blog-text {
   margin-top: 0.5em;
+}
+
+.btn-container {
+  text-align: center;
+  padding: 0 1em 1em;
+  margin: 0;
+}
+
+.recent-post-title {
+  text-align: center;
+  margin: 0;
+  font-size: 1rem;
 }
 
 .view-more-btn,
@@ -146,6 +198,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 2em;
+  margin-top: 2em;
 }
 
 .footer-text {
@@ -155,7 +208,7 @@ footer {
   font-weight: 700;
   line-height: 108.2%; /* 0.8115rem */
   letter-spacing: -0.0225rem;
-  margin:0;
+  margin: 0;
 }
 
 .footer-copyright {

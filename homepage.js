@@ -2,23 +2,33 @@
 import { heroArr } from "./data.js";
 import { dataArr } from "./data.js";
 
-console.log(heroArr)
+const hero = document.querySelector("#hero");
+const blogContainer = document.querySelector(".blog-container");
+const viewMoreBtn = document.querySelector(".view-more-btn");
+const viewLessBtn = document.querySelector(".view-less-btn");
+
 //render home page hero section
 
-heroArr.forEach(({ date, title, text }) => {
-  document.querySelector("#hero").innerHTML += `
-    <div class="text-container">
-        <span class="date upper">${date}</span>
-        <h1 class="hero-title">${title}</h1>
-        <p class="hero-text">${text}</p>
-    </div>`;
-});
+function showHero() {
+  heroArr.forEach(({ date, title, text }) => {
+    hero.innerHTML += `
+      <a href="post.html" class="text-container">
+          <span class="date upper">${date}</span>
+          <h1 class="hero-title">${title}</h1>
+          <p class="hero-text">${text}</p>
+      </a>`;
+  });
+}
+
+showHero();
 
 //render home page articles
-
-dataArr.forEach(({ id, img, date, title, text }) => {
-  document.querySelector(".blog-container").innerHTML += `
-        <div class="blog-article" id="blog-article-${id}">
+function showArticle() {
+  blogContainer.innerHTML = "";
+  dataArr.forEach(({ id, img, date, title, text }) => {
+    blogContainer.insertAdjacentHTML(
+      "beforebegin",
+      `<div class="blog-article" id="blog-article-${id}">
         <img
         class="blog-img"
         src="${img}"
@@ -27,50 +37,42 @@ dataArr.forEach(({ id, img, date, title, text }) => {
         <span class="date upper">${date}</span>
         <h3 class="blog-title">${title}</h3>
         <p class="blog-text">${text}</p>
-        </div>`;
-});
-onlyThreeArticles();
-addViewMoreBtn();
-addViewLessBtn();
-document.querySelector(".view-less-btn").style.display = "none";
+        </div>`
+    );
+  });
+  showThreeArticles();
+}
+
+showArticle();
 
 //show/hide more blog articles
-document.querySelector(".view-more-btn").addEventListener("click", () => {
+function showThreeArticles() {
   dataArr.forEach(({ id }) => {
-    document.querySelector(`#blog-article-${id}`).style.display = "initial";
+    if (id > 3) {
+      document.querySelector(`#blog-article-${id}`).classList.toggle("hidden");
+    }
   });
+}
 
-  document.querySelector(".view-more-btn").style.display = "none";
-  document.querySelector(".view-less-btn").style.display = "initial";
-  //show less blog articles
-  document.querySelector(".view-less-btn").addEventListener("click", () => {
-    onlyThreeArticles();
-    document.querySelector(".view-more-btn").style.display = "initial";
-    document.querySelector(".view-less-btn").style.display = "none";
+function showRestArticles() {
+  dataArr.forEach(({ id }) => {
+    if (id > 3) {
+      document.querySelector(`#blog-article-${id}`).classList.toggle("hidden");
+    }
   });
+}
+
+function showHideBtn() {
+  viewMoreBtn.classList.toggle("hidden");
+  viewLessBtn.classList.toggle("hidden");
+}
+
+viewMoreBtn.addEventListener("click", () => {
+  showRestArticles();
+  showHideBtn();
 });
 
-//show only first three articles on blog function
-
-function onlyThreeArticles() {
-  dataArr.forEach(({ id }) => {
-    if (id >= 4) {
-      document.querySelector(`#blog-article-${id}`).style.display = "none";
-    }
-    // } else {
-    //   document.querySelector(`#blog-article-${id}`).style.display = "initial";
-    // }
-  });
-}
-
-//add view-more btn on page
-function addViewMoreBtn() {
-  document.querySelector(".blog-container").innerHTML += `
-    <a class="view-more-btn" href="#" >View more</a>`;
-}
-
-//add view-less btn on page
-function addViewLessBtn() {
-  document.querySelector(".blog-container").innerHTML += `
-    <a class="view-less-btn" href="#" >View less</a>`;
-}
+viewLessBtn.addEventListener("click", () => {
+  showThreeArticles();
+  showHideBtn();
+});
