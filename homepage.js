@@ -12,7 +12,7 @@ const viewLessBtn = document.querySelector(".view-less-btn");
 function showHero() {
   heroArr.forEach(({ date, title, text }) => {
     hero.innerHTML += `
-      <div class="text-container container">
+      <div class="text-container">
           <span class="date upper">${date}</span>
           <h1 class="hero-title">${title}</h1>
           <p class="hero-text">${text}</p>

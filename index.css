@@ -41,24 +41,26 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #1e1e1e;
 }
 
 .container {
   width: min(26rem, 98%);
+  background-color: #fafafa;
 }
 
 /*------Header-----*/
 
 header {
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 1.25em;
-  margin-bottom: 0;
+  width: min(26rem, 98%);
+  background-color: #fff;
+  margin: 0;
+  padding: 0 3em;
 }
 
 .logo {
   display: flex;
+  /* flex-direction: column; */
   align-items: center;
   gap: 0.2em;
   color: #0e0e0e;
@@ -67,6 +69,7 @@ header {
   font-weight: 700;
   line-height: 108.2%; /* 0.9165rem */
   letter-spacing: -0.02544rem;
+  margin-right: auto;
 }
 
 .logo-icon {
@@ -76,6 +79,7 @@ header {
 
 nav ul {
   display: flex;
+  justify-content: flex-end;
   gap: 1em;
 }
 
@@ -99,7 +103,6 @@ header nav a {
   flex-direction: column;
   justify-content: end;
   text-decoration: none;
-  margin-bottom: 1.5em;
 }
 
 .text-container {
@@ -159,6 +162,7 @@ header nav a {
 /*-----Blog article-----*/
 
 .blog-container {
+  margin-top: 1.5em;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1em;
@@ -221,8 +225,9 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2em;
-  margin-top: 2em;
+  padding: 2em 0;
+  width: 100%;
+  margin-top: 1.5em;
 }
 
 .footer-text {
@@ -249,6 +254,10 @@ footer {
   .container {
     width: min(68rem, 98%);
     padding-inline: 2em;
+  }
+
+  header {
+    width: min(68rem, 98%);
   }
 
   #hero {
