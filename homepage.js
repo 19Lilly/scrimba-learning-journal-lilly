@@ -64,12 +64,14 @@ function showHideBtn() {
   viewLessBtn.classList.toggle("hidden");
 }
 
-viewMoreBtn.addEventListener("click", () => {
+viewMoreBtn.addEventListener("click", (e) => {
+  e.preventDefault();
   showRestArticles();
   showHideBtn();
 });
 
-viewLessBtn.addEventListener("click", () => {
+viewLessBtn.addEventListener("click", (e) => {
+  e.preventDefault();
   showThreeArticles();
   showHideBtn();
 });
